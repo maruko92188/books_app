@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
-  devise_for :users
+  # root "books#index"
+  # devise_for :users
   scope "(:locale)", locale: /en|ja/ do
+    devise_for :users
     resources :books
+    root "books#index"
   end
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
