@@ -26,6 +26,21 @@
   </div>
 
   <div class="field">
+    <p><%= f.label :post_code %></p>
+    <p><%= f.text_field :post_code %></p>
+  </div>
+
+  <div class="field">
+    <p><%= f.label :address %></p>
+    <p><%= f.text_field :address %></p>
+  </div>
+
+  <div class="field">
+    <p><%= f.label :self_introduction %></p>
+    <p><%= f.text_area :self_introduction %></p>
+  </div>
+
+  <div class="field">
     <p><%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i></p>
     <p><%= f.password_field :current_password, autocomplete: "current-password" %></p>
   </div>
